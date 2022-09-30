@@ -13,5 +13,5 @@ RUN chmod -R 700 /root/.ssh &&\
     chmod 600 /root/.ssh/id_rsa &&\
     ssh-keyscan bitbucket.org >> /root/.ssh/known_hosts
 
-RUN git clone git@bitbucket.org:dptrealtime/html-web-app.git /var/www/html/
+RUN git clone git@bitbucket.org:gururajsinghgst/html-web-app.git /var/www/html/
 CMD ["/usr/sbin/httpd", "-D","FOREGROUND"]
